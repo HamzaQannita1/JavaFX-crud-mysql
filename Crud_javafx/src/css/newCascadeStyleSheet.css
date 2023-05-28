@@ -1,0 +1,70 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.btn{ align-content: center ; 
+      -fx-background-color: #1350ab;
+      -fx-border-radius: 5px;
+      -fx-cursor: hand;
+
+
+}
+.btn:hover{-fx-background-color: #459fd3; -fx-cursor: hand;}
+.input{
+    -fx-background-color: #ddd; -fx-cursor: hand;    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #1350ab; -fx-border-radius: 5px;
+}
+.input:hover{
+    -fx-background-color: #FFF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-color: #459fd3;
+    -fx-cursor: hand;
+    -fx-border-radius: 5px;
+}
+.nav{
+    -fx-spacing: .5px;
+    -fx-background-color: #fff;
+    -fx-border-color: #1350ab;-fx-cursor: hand; 
+}
+.nav:hover{
+    -fx-spacing: .5px;
+    -fx-background-color: #ddd;
+    -fx-border-color: #1350ab;-fx-cursor: hand; 
+}
+.btn_update{
+    align-content: center ; 
+    -fx-background-color: #0598ff;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+.btn_update:hover{-fx-background-color: #4a9bcd; -fx-cursor: hand;}
+.btn_del{
+    align-content: center ; 
+    -fx-background-color: red;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+.btn_del:hover{-fx-background-color: #d74747; -fx-cursor: hand;}
+.btn_register{
+    align-content: center ; 
+    -fx-background-color: #0598ff;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand; 
+}
+.btn_register:hover{
+    align-content: center ; 
+    -fx-background-color: #5ec1ff;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand; 
+}
+.txt_f{
+    -fx-background-color: #ddd; -fx-cursor: hand;    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #0598ff; -fx-border-radius: 5px;
+}
+.txt_f:hover{
+    -fx-border-color: #0598ff;
+    -fx-border-width: 1px 2px 1xp 2px;
+}

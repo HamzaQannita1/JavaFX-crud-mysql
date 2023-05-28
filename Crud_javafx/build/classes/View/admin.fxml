@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="779.0" style="-fx-background-color: #ddd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminController">
+   <children>
+      <AnchorPane layoutX="24.0" layoutY="69.0" prefHeight="263.0" prefWidth="263.0">
+         <children>
+            <TextField fx:id="txt_usrname" layoutX="21.0" layoutY="79.0" prefHeight="25.0" prefWidth="217.0" promptText="user name" styleClass="input" stylesheets="@../css/newCascadeStyleSheet.css" />
+            <TextField fx:id="txt_email" layoutX="21.0" layoutY="119.0" prefHeight="25.0" prefWidth="217.0" promptText="email" styleClass="input" stylesheets="@../css/newCascadeStyleSheet.css" />
+            <TextField fx:id="txt_salary" layoutX="21.0" layoutY="212.0" prefHeight="25.0" prefWidth="217.0" promptText="salary" styleClass="input" stylesheets="@../css/newCascadeStyleSheet.css" />
+            <PasswordField fx:id="txt_pass" layoutX="23.0" layoutY="171.0" prefHeight="26.0" prefWidth="217.0" promptText="password" styleClass="input" stylesheets="@../css/newCascadeStyleSheet.css" />
+            <TextField fx:id="txt_id" layoutX="21.0" layoutY="30.0" prefHeight="25.0" prefWidth="217.0" promptText="ID" styleClass="input" stylesheets="@../css/newCascadeStyleSheet.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="319.0" layoutY="87.0" prefHeight="263.0" prefWidth="433.0">
+         <children>
+            <TableView fx:id="tabel_view" layoutX="32.0" layoutY="24.0" prefHeight="263.0" prefWidth="433.0" stylesheets="@../css/newCascadeStyleSheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="id_col" prefWidth="54.0" text="ID" />
+                <TableColumn fx:id="name_col" prefWidth="65.0" text="Name" />
+                  <TableColumn fx:id="pass_col" prefWidth="111.0" text="Password" />
+                  <TableColumn fx:id="salary_col" prefWidth="92.0" text="Salary" />
+                  <TableColumn fx:id="email_col" prefWidth="108.0" text="email" />
+              </columns>
+               <styleClass>
+                  <String fx:value="nav" />
+                  <String fx:value="nav" />
+               </styleClass>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="244.0" layoutY="24.0" prefHeight="17.0" prefWidth="291.0" text="CRUD JavaFx">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_add" layoutX="55.0" layoutY="418.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: green;" text="Add" />
+      <Button fx:id="btn_update" layoutX="205.0" layoutY="418.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="114.0" styleClass="btn_update" stylesheets="@../css/newCascadeStyleSheet.css" text="Update" />
+      <Button fx:id="btn_delete" layoutX="432.0" layoutY="418.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="114.0" styleClass="btn_del" stylesheets="@../css/newCascadeStyleSheet.css" text="Delete" />
+      <Button fx:id="btn_reset" layoutX="580.0" layoutY="418.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="114.0" styleClass="btn" stylesheets="@../css/newCascadeStyleSheet.css" text="Reset" />
+   </children>
+</AnchorPane>
